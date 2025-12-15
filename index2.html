@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUR LIYANA - Science Agro Profile</title>
+    <style>
+        /* CSS Variables for Theming */
+        :root {
+            --primary-color: #ffffff; /* White background */
+            --secondary-color: #333333; /* Dark text */
+            --accent-color: #0077b6; /* Deep Ocean Blue (UMT Theme) */
+            --border-radius: 8px;
+            --spacing-large: 20px;
+            --spacing-medium: 15px;
+            --spacing-small: 10px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Light gray background for body */
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: var(--spacing-large);
+            background-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: var(--border-radius);
+        }
+
+        /* Header/Profile Section */
+        .profile-header {
+            text-align: center;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: var(--spacing-medium);
+            margin-bottom: var(--spacing-large);
+        }
+
+        .profile-header h1 {
+            color: var(--accent-color);
+            margin: 0 0 var(--spacing-small) 0;
+            font-size: 2.2em;
+        }
+
+        .profile-header h3 {
+            color: #555;
+            margin: 0;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: #888;
+            margin-top: var(--spacing-small);
+        }
+
+        /* Main Content Grid */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--spacing-large);
+        }
+
+        /* Sidebar/Details */
+        .sidebar {
+            padding-right: var(--spacing-medium);
+        }
+
+        .sidebar-item, .case-study {
+            margin-bottom: var(--spacing-large);
+            padding: var(--spacing-medium);
+            border-left: 5px solid var(--accent-color);
+            background-color: #e9f5ff; /* Lighter shade of blue for sections */
+            border-radius: var(--border-radius);
+        }
+
+        .sidebar-item h2, .case-study h2 {
+            color: var(--accent-color);
+            margin-top: 0;
+            border-bottom: 1px dashed rgba(0, 119, 182, 0.5);
+            padding-bottom: var(--spacing-small);
+            font-size: 1.3em;
+        }
+        
+        /* List Styling */
+        .subjects-list, .hobby-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .subjects-list li::before {
+            content: "🌱";
+            margin-right: 8px;
+            color: var(--accent-color);
+        }
+        
+        .hobby-list li::before {
+            content: "🏖️";
+            margin-right: 8px;
+            color: var(--accent-color);
+        }
+        
+        /* Case Study Styling */
+        .case-study-title {
+            font-size: 1.5em;
+            margin-bottom: var(--spacing-small);
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="profile-header">
+            <h1>NUR LIYANA</h1>
+            <h3>Program: Science Agro | Year: Year 1</h3>
+            <p class="tagline">**'Advancing Agriculture through Science'**</p>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                
+                <div class="sidebar-item">
+                    <h2>📍 Location</h2>
+                    <p>UMT, Kuala Nerus</p>
+                </div>
+
+                <div class="sidebar-item">
+                    <h2>📚 Current Subjects</h2>
+                    <ul class="subjects-list">
+                        <li>Soil science</li>
+                        <li>Microbiology</li>
+                        <li>Science computer</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-item">
+                    <h2>🤸 Hobby</h2>
+                    <ul class="hobby-list">
+                        <li>Evening walks at Pantai UMT</li>
+                    </ul>
+                </div>
+
+            </aside>
+
+            <section class="case-study">
+                <h2>🔬 Featured Case Study</h2>
+                <h3 class="case-study-title">Science agro in modern agriculture</h3>
+                <p>
+                    This case study explores science based approaches in agriculture. It delves into the integration of **Microbiology** and **Soil science** to optimize crop yield and promote sustainable farming practices. The study also investigates how **Science computer** tools are used for data analysis and precision agriculture planning.
+                </p>
+            </section>
+        </div>
+
+    </div>
+
+</body>
+</html>
